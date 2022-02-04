@@ -1,0 +1,22 @@
+main {
+  get imput //obtiene la entrada
+  get first from imput //obtiene el primer caracter de la entra numero de misiones
+  while i=o to first do //recorre las tuplas
+    get next from imput //obtiene el primer caracter de la tupla que se procesa
+    set i=next //asigna al contador
+    get end from imput //obtiene el segundo caracter de la tupla que se procesa
+    for i to end do //se avanza desde next a end
+      add to uniqueorderset i //se adiciona a un conjunto ordenado que no acepta repetidos
+      i++ //se avanza el contador para la siguiente tupla
+    end for
+  end while
+  return countelementsof(uniqueorderset) //en el conjunto qudan las misiones documentadas, luego el numero de cuantas es la respuesta a la necesidad de Hokage
+}
+
+funcion add to uniqueorderset {
+  get entrada
+  while i to countelementsof(uniqueorderset)
+    get element(i) on t
+    if entrada < t add entrada to 
+  end while
+}
